@@ -1,0 +1,16 @@
+
+django
+django-crispy-forms
+numpy
+pandasql
+
+
+virtualenv
+Django
+django-crispy-forms
+pandasql
+requests
+tinydb
+openpyxl
+excel
+xlrd==1.2.0
