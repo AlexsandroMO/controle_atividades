@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.http import HttpResponse
-from .models import ControleProf
+from .models import TeamControl
 #from .forms import ProjectForm, LdProjForm #, SubjectForm, PageTypeForm, DocTypeForm, PageformatForm, DocumentModelForm, EmployeeForm, StatusDocForm, ActionForm #, LdProjForm, CotationForm
 from django.contrib import messages
 
@@ -26,6 +26,6 @@ def listaFunc(request):
     ListDoc = DocumentListProject.objects.all().order_by('id')
     '''
 
-    Controle = ControleProf.objects.all()
+    Controle = TeamControl.objects.all()
 
     return render(request, 'task/lista-func.html',{'Controle':Controle})
